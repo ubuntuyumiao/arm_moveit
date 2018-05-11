@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find realarm_moveit)/launch/demo.launch">
+  </include>
+  <node name="move_the_arm"
+        pkg="my_dynamixel_tutorial"
+        type="move_group_trajectory_client.py"
+         output="screen">
+  </node>
+</launch>
